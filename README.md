@@ -1,23 +1,39 @@
-# 🎮Classificador de Nível de Herói
+# Calculadora de Partidas Rankeadas
 
-Este é um pequeno programa JavaScript que classifica o nível de um herói com base em sua quantidade de experiência (XP). O código utiliza variáveis, eventos do formulário, estruturas de decisão e um array de níveis para determinar o nível do herói com precisão.
+Esta simples aplicação web calcula o nível heroico de um herói com base em suas vitórias e derrotas. Criada com o objetivo de estudos e treinamento de lógica.
 
-## 🧩Como Funciona
 
-1. O programa começa selecionando os elementos HTML do formulário (nome e XP) usando o `querySelector`.
+## Como Usar
 
-2. Um evento de envio de formulário é adicionado ao formulário. Quando o formulário é enviado, a função `mostrarNivel()` é chamada.
+1. Abra a aplicação em seu navegador da web.
 
-3. A função `mostrarNivel()` obtém o nome do herói e a quantidade de XP fornecida no formulário.
+2. Preencha o número de vitórias e derrotas do herói.
 
-4. Em seguida, ele itera por meio de uma matriz de níveis, verificando se a quantidade de XP se encaixa em algum dos intervalos de XP definidos.
+3. Clique no botão "Calcular".
 
-5. Quando o nível apropriado é encontrado, a função para de iterar e exibe uma mensagem de alerta com o nome do herói e seu nível.
+4. A aplicação determinará o nível heroico do herói e o exibirá na tela.
 
-6. A função `limparCampos()` é chamada para limpar os campos do formulário após a exibição do nível.
+## Regras para Níveis
 
-## 💡Exemplo de Saída
+Os níveis são determinados da seguinte forma:
 
-Por exemplo, se você inserir o nome "Batman" e 3000 XP no formulário e submetê-lo, você receberá uma mensagem de alerta que diz:
+- Menos de 10 vitórias: Ferro
+- 11 a 20 vitórias: Bronze
+- 21 a 50 vitórias: Prata
+- 51 a 80 vitórias: Ouro
+- 81 a 90 vitórias: Diamante
+- 91 a 100 vitórias: Lendário
+- Mais de 101 vitórias: Imortal
 
-O Herói de nome "Batman" está no nível de Prata
+## Observação
+
+- Os campos para vitórias e derrotas não podem ser deixados em branco. Certifique-se de preenchê-los antes de calcular o nível heroico.
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
+
+
